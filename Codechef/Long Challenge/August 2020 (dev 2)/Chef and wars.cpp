@@ -1,6 +1,16 @@
 //Keep calm and carry on..
+/* 
+    Problem :Chef Wars - Return of the Jedi
+    URL : https://www.codechef.com/AUG20B/problems/CHEFWARS:
+*/
+
 
 #include<bits/stdc++.h>
+
+using namespace std;
+typedef long long int ll;
+typedef unsigned long long int ull;
+typedef long double ld;
 
 # define fast           ios_base::sync_with_stdio(false),cin.tie(NULL),cout.tie(NULL);
 # define pb             push_back
@@ -13,12 +23,6 @@
 # define loop1(i,a,b)   for(int i = a; i<b; i++)
 # define loop2(i,a,b)   for(int i = b-1; i>=a; i--)
 # pragma GCC optimize "trapv"
-
-
-using namespace std;
-
-typedef long long ll;
-typedef double db;
 
 
  int main(){
