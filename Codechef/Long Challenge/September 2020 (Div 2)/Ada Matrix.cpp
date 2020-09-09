@@ -50,7 +50,7 @@ typedef long double ld;
          }
      }
 
-    if(s[k-1] == '0') ans=ans+1;
+    if(s[k-1] == '0') ans+=1;
     cout<<ans;
 
  }
