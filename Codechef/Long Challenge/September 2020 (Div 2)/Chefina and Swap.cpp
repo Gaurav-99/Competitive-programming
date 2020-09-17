@@ -44,7 +44,7 @@ typedef long double ld;
         cin>>n;
         if ( ((n*(n+1))/2) &1 ) cout<<0;
         else {
-            int k; ll ans = 0;
+            ll k; ll ans = 0;
             k = find_k(n);
             ans += n-k;
             if ( (2*(k*k+k)) == (n*n+n) )   ans += nc2(k) + nc2(n-k);
