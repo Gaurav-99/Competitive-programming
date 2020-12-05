@@ -34,8 +34,7 @@ void just_solved_it() {
 	int vac = 0, de = 0;
 	while (vac < p) {
 		de++;
-		if (de >= d1)	vac += v1;
-		if (de >= d2)	vac += v2;
+		if (de >= d1 || de >= d2 ){	vac += v1; vac += v2;	  }
 	}
 
 	cout << de;
