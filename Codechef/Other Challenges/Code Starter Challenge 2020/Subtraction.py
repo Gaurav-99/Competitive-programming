@@ -12,5 +12,5 @@ if __name__ == '__main__':
 			n //= 10
 		else:
 			n -= 1
-			print(n)	
+	print(n)	
 
