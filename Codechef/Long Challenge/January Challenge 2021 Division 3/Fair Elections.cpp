@@ -1,4 +1,3 @@
-
 //Keep calm and carry on..
 
 /*  Problem :
@@ -35,7 +34,7 @@ int sumDigits(int no) {
 void just_solved_it() {
 	ll n, m;	cin >> n >> m;
 
-	ll a[n] , b[n], i = 0, ans = 0;
+	ll a[n] = {0} , b[m] = {0}, i = 0, ans = 0;
 
 	loop1(i, 0, n)	cin >> a[i];
 	loop1(i, 0, m)	cin >> b[i];
@@ -50,11 +49,15 @@ void just_solved_it() {
 
 	if (suma > sumb)	cout << 0;
 	else {
-		while (cnd != true) {
-			if (i == n || suma > sumb)	break;
+		ll mm = min(n, m);
+		while (i < mm) {
 			suma = sumb = 0 ;
 
 			swap(a[i], b[i]);
+			//loop1(i, 0, n)	cout << a[i];
+			//cout << "  ";
+			//loop1(i, 0, m)	cout << b[i];
+			//cout << endl;
 			suma = accumulate(a, a + n, suma);
 			sumb = accumulate(b, b + m, sumb);
 			if (suma > sumb) {
